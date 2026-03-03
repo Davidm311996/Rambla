@@ -36,47 +36,154 @@
             display: none !important;
         }
 
-        @media (max-width:991px) and (min-width:768px) {
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="2375c0d9-ae9a-6e28-6019-3b103ae29a61"] {
-                opacity: 0;
+
+
+        /* --- Execution Section: Ultimate Normalization & Mobile Fix --- */
+
+        /* Reset and Center the Container */
+        .home-service-layout {
+            width: 100% !important;
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            padding: 80px 20px !important;
+            display: block !important;
+            position: relative !important;
+        }
+
+        .service-content-wrap,
+        .services-animated-content-wrap,
+        .service-text-left,
+        .services-animated-text-wrap {
+            width: 100% !important;
+            display: block !important;
+            position: static !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
+        /* Responsive Block Styling */
+        .image-text-wrap {
+            display: flex !important;
+            flex-direction: column !important;
+            /* Default Mobile Stacking */
+            align-items: center !important;
+            justify-content: center !important;
+            margin-bottom: 60px !important;
+            gap: 30px !important;
+            position: relative !important;
+            width: 100% !important;
+            min-height: auto !important;
+        }
+
+        .services-animation-details-wrap {
+            width: 100% !important;
+            max-width: 600px !important;
+            opacity: 1 !important;
+            transform: none !important;
+            display: block !important;
+            position: relative !important;
+            text-align: left !important;
+        }
+
+        .image-text-wrap .cover-image-wrap.home-services {
+            width: 100% !important;
+            max-width: 100% !important;
+            /* Fill on mobile */
+            height: auto !important;
+            aspect-ratio: 4/3 !important;
+            position: relative !important;
+            display: block !important;
+            transform: none !important;
+            top: auto !important;
+            left: auto !important;
+            border-radius: 12px !important;
+            overflow: hidden !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05) !important;
+        }
+
+        .image-text-wrap .cover-image-wrap.home-services img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            transform: none !important;
+            opacity: 1 !important;
+            position: static !important;
+        }
+
+        /* Desktop Adjustments */
+        @media (min-width: 992px) {
+            .home-service-layout {
+                padding: 120px 0 !important;
             }
 
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="393b256c-45ac-cab9-00c2-086fc42e1b9f"] {
-                opacity: 0;
+            .image-text-wrap {
+                flex-direction: row !important;
+                justify-content: space-between !important;
+                margin-bottom: 120px !important;
+                gap: 80px !important;
             }
 
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="498d7554-e5c1-4751-9a94-613467e2e470"] {
-                opacity: 0;
+            .image-text-wrap:nth-child(even) {
+                flex-direction: row-reverse !important;
+            }
+
+            .services-animation-details-wrap {
+                flex: 1 !important;
+            }
+
+            .image-text-wrap .cover-image-wrap.home-services {
+                flex: 1 !important;
+                max-width: 500px !important;
+                height: 550px !important;
+                aspect-ratio: auto !important;
             }
         }
 
-        @media (max-width:767px) and (min-width:480px) {
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="2375c0d9-ae9a-6e28-6019-3b103ae29a61"] {
-                opacity: 0;
+        /* --- Mobile Photos Fix: Below Hero Section --- */
+        @media (max-width: 991px) {
+            .banner-image-box-wrap {
+                height: auto !important;
+                min-height: 300px !important;
+                position: relative !important;
             }
 
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="393b256c-45ac-cab9-00c2-086fc42e1b9f"] {
-                opacity: 0;
+            .banner-image-wrap {
+                height: 300px !important;
+                position: relative !important;
+                overflow: hidden !important;
             }
 
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="498d7554-e5c1-4751-9a94-613467e2e470"] {
-                opacity: 0;
+            .starix-slider-wrap {
+                position: relative !important;
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            .starix-bottom.one {
+                display: flex !important;
+                gap: 10px !important;
+                padding: 0 15px !important;
+                height: 100% !important;
+                align-items: center !important;
+            }
+
+            .cover-image.stratix {
+                height: 220px !important;
+                border-radius: 8px !important;
+            }
+
+            /* Adjust carve images for mobile to prevent covering photos */
+            .banner-image-wrap-bottom {
+                background-color: transparent !important;
+            }
+
+            .carve-image-two {
+                transform: scaleY(1.2) !important;
+                /* Reduce scale on mobile */
             }
         }
 
-        @media (max-width:479px) {
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="2375c0d9-ae9a-6e28-6019-3b103ae29a61"] {
-                opacity: 0;
-            }
-
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="393b256c-45ac-cab9-00c2-086fc42e1b9f"] {
-                opacity: 0;
-            }
-
-            html.w-mod-js:not(.w-mod-ix) [data-w-id="498d7554-e5c1-4751-9a94-613467e2e470"] {
-                opacity: 0;
-            }
-        }
+        /* ------------------------------------------- */
     </style>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" />
@@ -251,35 +358,36 @@
                             class="carve-image" style="width: 100%; height: auto; display: block;" />
                     </div>
                     <div class="banner-image-wrap"
-                        style="position: relative; z-index: 1; background-color: transparent !important;">
-                        <div class="starix-slider-wrap" style="overflow: visible;">
+                        style="position: relative; z-index: 1; background-color: transparent !important; overflow: hidden;">
+                        <div class="starix-slider-wrap" style="overflow: hidden;">
                             <div style="display: flex; gap: 20px; justify-content: center; width: 100%; padding: 0 40px; box-sizing: border-box;"
                                 class="starix-bottom one">
                                 <img src="https://cdn.prod.website-files.com/697a72996780635254f431ca/699d36b009ba62eca7d6c047_P4%201%20.jpg"
                                     loading="eager"
-                                    style="flex: 1; height: 500px; object-fit: cover; opacity: 1 !important; border: none !important; box-shadow: none !important; margin-bottom: -2px;"
+                                    style="flex: 1; height: 500px; object-fit: cover; opacity: 1 !important; border: none !important; box-shadow: none !important;"
                                     alt="Starix Image " class="cover-image stratix" />
                                 <img src="https://cdn.prod.website-files.com/697a72996780635254f431ca/6998c0262b14bd69f9010c1c_IMG_8911.jpg"
                                     loading="eager"
-                                    style="flex: 1; height: 500px; object-fit: cover; opacity: 1 !important; border: none !important; box-shadow: none !important; margin-bottom: -2px;"
+                                    style="flex: 1; height: 500px; object-fit: cover; opacity: 1 !important; border: none !important; box-shadow: none !important;"
                                     alt="Starix Image " class="cover-image stratix" />
                                 <img src="https://cdn.prod.website-files.com/697a72996780635254f431ca/699d37a6848c1f1d1dee6450_P4-3.jpg"
                                     loading="eager"
-                                    style="flex: 1; height: 500px; object-fit: cover; opacity: 1 !important; border: none !important; box-shadow: none !important; margin-bottom: -2px;"
+                                    style="flex: 1; height: 500px; object-fit: cover; opacity: 1 !important; border: none !important; box-shadow: none !important;"
                                     alt="Starix Image " class="cover-image stratix" />
                                 <img src="https://cdn.prod.website-files.com/697a72996780635254f431ca/6998c026be2ba1bb535dc66d_IMG_8920.jpg"
                                     loading="eager"
-                                    style="flex: 1; height: 500px; object-fit: cover; opacity: 1 !important; border: none !important; box-shadow: none !important; margin-bottom: -2px;"
+                                    style="flex: 1; height: 500px; object-fit: cover; opacity: 1 !important; border: none !important; box-shadow: none !important;"
                                     alt="Starix Image " class="cover-image stratix" />
                             </div>
                         </div>
                     </div>
                     <div class="banner-image-wrap-bottom"
-                        style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 2; pointer-events: none;">
+                        style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 2; pointer-events: none; background-color: white;">
                         <img src="https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4329e_Carve%20Image%20%20Two.png"
                             loading="eager" width="5675" sizes="100vw" alt="Carve Image"
                             srcset="https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4329e_Carve%2520Image%2520%2520Two-p-500.png 500w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4329e_Carve%20Image%20%20Two.png 1920w"
-                            class="carve-image-two" style="width: 100%; height: auto; display: block;" />
+                            class="carve-image-two"
+                            style="width: 100%; height: auto; display: block; transform: scaleY(2.0); transform-origin: top center;" />
                     </div>
                 </div>
             </div>
@@ -384,17 +492,16 @@
     </section>
     <section class="section">
         <div class="container">
-            <div data-w-id="afc257f9-111a-0923-0142-aa801a2d7eaf" class="home-service-layout">
+            <div class="home-service-layout">
                 <div class="home-services-heading-wrap">
-                    <h2 data-w-id="f22c2292-9904-cd86-dbae-a77ea49eff1d" style="opacity:0" class="h2">Execution</h2>
+                    <h2 class="h2">Execution</h2>
                 </div>
                 <div class="service-content-wrap">
                     <div class="services-animated-content-wrap">
                         <div class="service-text-left">
                             <div class="services-animated-text-wrap">
                                 <div class="image-text-wrap one">
-                                    <div data-w-id="1b19bb20-dccc-588b-19e8-f1a69778e1d9" style="opacity:0"
-                                        class="services-animation-details-wrap">
+                                    <div class="services-animation-details-wrap">
                                         <h3 class="h5">01</h3>
                                         <div class="services-description-wrap">
                                             <h3 class="h5">Discover &amp; Align</h3>
@@ -403,17 +510,14 @@
                                                 strategic investments — that perfectly match their vision.</p>
                                         </div>
                                     </div>
-                                    <div data-w-id="2375c0d9-ae9a-6e28-6019-3b103ae29a61"
-                                        class="cover-image-wrap home-services dex-hide"><img
+                                    <div class="cover-image-wrap home-services"><img
                                             src="https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328d_Service%20Three.webp"
                                             loading="lazy" sizes="(max-width: 1500px) 100vw, 1500px, 100vw"
                                             srcset="https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328d_Service%2520Three-p-500.webp 500w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328d_Service%2520Three-p-800.webp 800w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328d_Service%2520Three-p-1080.webp 1080w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328d_Service%20Three.webp 1500w"
                                             alt="Service Image" class="cover-image services" /></div>
                                 </div>
-                                <div id="w-node-f282c55b-ae03-3935-e016-6cc5946c1912-54f4326d"
-                                    class="image-text-wrap three">
-                                    <div data-w-id="0a268dfd-f2db-dc8f-64b3-1eec18493468" style="opacity:0"
-                                        class="services-animation-details-wrap">
+                                <div class="image-text-wrap two">
+                                    <div class="services-animation-details-wrap">
                                         <h3 class="h5">02</h3>
                                         <div class="services-description-wrap">
                                             <h3 class="h5">Advice &amp; coordinate</h3>
@@ -422,16 +526,14 @@
                                                 acting in the client’s best interest.</p>
                                         </div>
                                     </div>
-                                    <div data-w-id="393b256c-45ac-cab9-00c2-086fc42e1b9f"
-                                        class="cover-image-wrap home-services dex-hide"><img
+                                    <div class="cover-image-wrap home-services"><img
                                             src="https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328c_Service%20Two.webp"
                                             loading="lazy" sizes="(max-width: 1500px) 100vw, 1500px, 100vw"
                                             srcset="https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328c_Service%2520Two-p-500.webp 500w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328c_Service%2520Two-p-800.webp 800w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328c_Service%2520Two-p-1080.webp 1080w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328c_Service%20Two.webp 1500w"
                                             alt="Service Image" class="cover-image services" /></div>
                                 </div>
-                                <div class="image-text-wrap two">
-                                    <div data-w-id="0ddede87-a362-78b1-25ec-c72cc77dad5b" style="opacity:0"
-                                        class="services-animation-details-wrap">
+                                <div class="image-text-wrap three">
+                                    <div class="services-animation-details-wrap">
                                         <h3 class="h5">03</h3>
                                         <div class="services-description-wrap">
                                             <h3 class="h5">Turnkey solutions</h3>
@@ -440,8 +542,7 @@
                                                 are complete, operational, and ready for immediate use.</p>
                                         </div>
                                     </div>
-                                    <div data-w-id="498d7554-e5c1-4751-9a94-613467e2e470"
-                                        class="cover-image-wrap home-services dex-hide"><img
+                                    <div class="cover-image-wrap home-services"><img
                                             src="https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328b_Service%20One.webp"
                                             loading="lazy" sizes="(max-width: 1500px) 100vw, 1500px, 100vw"
                                             srcset="https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328b_Service%2520One-p-500.webp 500w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328b_Service%2520One-p-800.webp 800w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328b_Service%2520One-p-1080.webp 1080w, https://cdn.prod.website-files.com/697a72996780635254f431ca/697a729c6780635254f4328b_Service%20One.webp 1500w"
