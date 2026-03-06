@@ -473,12 +473,12 @@
         </div>
     </section>
 
-    <section data-w-id="5af6118a-51d6-f5a4-26b2-8daa8d3f13cb" class="section black height">
+    <section data-w-id="5af6118a-51d6-f5a4-26b2-8daa8d3f13cb" class="section black height" style="padding-top: 40px;">
         <div class="container">
             <div class="result-height-box">
                 <div class="result-sticky-box">
                     <div data-w-id="4639a693-9ce1-bd66-dfba-5fef2a7871e2" class="results-layout">
-                        <div class="result-details-wrap">
+                        <div class="result-details-wrap" style="margin-top: 5%;">
                             <div class="result-text-wrap">
                                 <div class="result-center">
                                     <h2 class="h2 text-white">Driving results</h2>
@@ -758,8 +758,7 @@
                 <div class="image-overlay-box"></div>
                 <div class="creation-details-box">
                     <div class="creation-text-box">
-                        <h2 
-                            class="h2 text-white text-center zoom-target"><sub>Your vision, your priorities, our care at
+                        <h2 class="h2 text-white text-center zoom-target"><sub>Your vision, your priorities, our care at
                                 every
                                 step</sub></h2>
                     </div>
@@ -942,8 +941,8 @@
         document.addEventListener("DOMContentLoaded", function () {
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add("smooth-zoom");
+                    if (enisIntersecting) {
+                 entry.target.classList.add("smooth-zoom");
                         observer.unobserve(entry.target);
                     }
                 });
