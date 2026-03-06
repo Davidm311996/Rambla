@@ -48,6 +48,17 @@
                 transform: translate3d(0, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
             }
         }
+
+        .cover-image-wrap.service {
+            aspect-ratio: 1 / 1 !important;
+            overflow: hidden;
+        }
+
+        .cover-image-wrap.service img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
     </style>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" />
