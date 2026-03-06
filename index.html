@@ -473,46 +473,50 @@
         </div>
     </section>
 
-    <!-- New Clean Driving Results Section -->
-    <section class="section black" style="padding: 60px 0; min-height: auto !important;">
-        <div class="container">
-            <div style="text-align: center; margin-bottom: 40px;">
-                <h2 class="h2 text-white">Driving results</h2>
-            </div>
-            <div id="parallax-results-container"
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; width: 100%; max-width: 1000px; margin: 0 auto;">
-                <div class="result-box-content parallax-item"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
-                    <div class="inside-box-content"
-                        style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
-                        <h3 class="h4 text-white" style="margin: 0;">50+</h3>
-                        <p class="paragraph text-white result" style="margin: 0;">Projects Delivered Under Mandate</p>
-                    </div>
+    <!-- Long-Scroll Staggered Parallax Driving Results Section -->
+    <section class="section black"
+        style="padding: 0; min-height: 250vh !important; position: relative; overflow: visible;">
+        <div style="position: sticky; top: 0; height: 100vh; display: flex; align-items: center; overflow: hidden;">
+            <div class="container" style="width: 100%;">
+                <div style="text-align: center; margin-bottom: 60px;">
+                    <h2 class="h2 text-white">Driving results</h2>
                 </div>
-                <div class="result-box-content parallax-item"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
-                    <div class="inside-box-content"
-                        style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
-                        <h3 class="h4 text-white" style="margin: 0;">£5M+</h3>
-                        <p class="paragraph text-white result" style="margin: 0;">Assets Acquired with Precision</p>
+                <div id="parallax-results-container"
+                    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; width: 100%; max-width: 1000px; margin: 0 auto; align-items: start;">
+                    <div class="result-box-content parallax-item"
+                        style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform; transform: translateY(0px);">
+                        <div class="inside-box-content"
+                            style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
+                            <h3 class="h4 text-white" style="margin: 0;">50+</h3>
+                            <p class="paragraph text-white result" style="margin: 0;">Projects Delivered Under Mandate
+                            </p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-box-content parallax-item"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
-                    <div class="inside-box-content"
-                        style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
-                        <h3 class="h4 text-white" style="margin: 0;">100%</h3>
-                        <p class="paragraph text-white result" style="margin: 0;">Continuing Clients &amp;
-                            Recommendations</p>
+                    <div class="result-box-content parallax-item"
+                        style="margin: 100px 0 0 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform; transform: translateY(0px);">
+                        <div class="inside-box-content"
+                            style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
+                            <h3 class="h4 text-white" style="margin: 0;">£5M+</h3>
+                            <p class="paragraph text-white result" style="margin: 0;">Assets Acquired with Precision</p>
+                        </div>
                     </div>
-                </div>
-                <div class="result-box-content parallax-item"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
-                    <div class="inside-box-content"
-                        style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
-                        <h3 class="h4 text-white" style="margin: 0;">1:1</h3>
-                        <p class="paragraph text-white result" style="margin: 0;">Single execution lead per project
-                            ensuring continuity and focus</p>
+                    <div class="result-box-content parallax-item"
+                        style="margin: 50px 0 0 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform; transform: translateY(0px);">
+                        <div class="inside-box-content"
+                            style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
+                            <h3 class="h4 text-white" style="margin: 0;">100%</h3>
+                            <p class="paragraph text-white result" style="margin: 0;">Continuing Clients &amp;
+                                Recommendations</p>
+                        </div>
+                    </div>
+                    <div class="result-box-content parallax-item"
+                        style="margin: 150px 0 0 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform; transform: translateY(0px);">
+                        <div class="inside-box-content"
+                            style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
+                            <h3 class="h4 text-white" style="margin: 0;">1:1</h3>
+                            <p class="paragraph text-white result" style="margin: 0;">Single execution lead per project
+                                ensuring continuity and focus</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -971,22 +975,27 @@
 
             const handleScroll = function () {
                 const rect = container.getBoundingClientRect();
+                const section = container.closest('.section.black');
+                const sectionRect = section.getBoundingClientRect();
                 const windowHeight = window.innerHeight;
 
-                // Only animate if container is partially in viewport
-                if (rect.top < windowHeight && rect.bottom > 0) {
-                    // Calculate distance from center of viewport to center of container
-                    const containerCenter = rect.top + rect.height / 2;
-                    const viewportCenter = windowHeight / 2;
-                    const distanceFromCenter = containerCenter - viewportCenter;
+                // Only animate if the parent section is visible
+                if (sectionRect.top < windowHeight && sectionRect.bottom > 0) {
+                    // Calculate scroll progress through the entire 250vh section (0 to 1)
+                    const totalScrollRange = sectionRect.height - windowHeight;
+                    const currentScroll = -sectionRect.top;
+                    const progress = Math.max(0, Math.min(1, currentScroll / totalScrollRange));
 
                     items.forEach((item, index) => {
-                        // More aggressive speeds: 0.12 and 0.22
-                        const speed = (index % 2 === 0) ? 0.12 : 0.22;
-                        const yPos = distanceFromCenter * speed;
+                        // Very strong staggered speeds: 0.2 to 0.5
+                        const intensities = [0.25, 0.45, 0.35, 0.55];
+                        const intensity = intensities[index] || 0.3;
 
-                        // Subtle rotation based on scroll position
-                        const rotation = (distanceFromCenter * 0.005) * (index % 2 === 0 ? 1 : -1);
+                        // Movement range: -200px to 200px based on progress
+                        const yPos = (progress - 0.5) * (intensity * 1000);
+
+                        // Dynamic rotation: -3deg to 3deg
+                        const rotation = (progress - 0.5) * (index % 2 === 0 ? 6 : -6);
 
                         item.style.transform = `translateY(${yPos}px) rotate(${rotation}deg)`;
                     });
