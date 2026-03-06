@@ -477,7 +477,7 @@
         <div class="container">
             <div class="result-height-box">
                 <div class="result-sticky-box">
-                    <div data-w-id="4639a693-9ce1-bd66-dfba-5fef2a7871e2" class="results-layout">
+                    <div data-w-id="4639a693-9ce1-bd66-dfba-5fef2a7871e2" class="results-layout" style="gap: 20px;">
                         <div class="result-details-wrap" style="margin-top: 5%;">
                             <div class="result-text-wrap">
                                 <div class="result-center">
@@ -942,7 +942,7 @@
             const observer = new IntersectionObserver((entries, observer) => {
                 entries.forEach(entry => {
                     if (enisIntersecting) {
-                 entry.target.classList.add("smooth-zoom");
+                        entry.target.classList.add("smooth-zoom");
                         observer.unobserve(entry.target);
                     }
                 });
