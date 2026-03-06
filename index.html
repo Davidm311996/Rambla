@@ -969,23 +969,32 @@
 
             if (!container || items.length === 0) return;
 
-            window.addEventListener('scroll', function () {
+            const handleScroll = function () {
                 const rect = container.getBoundingClientRect();
                 const windowHeight = window.innerHeight;
 
                 // Only animate if container is partially in viewport
                 if (rect.top < windowHeight && rect.bottom > 0) {
-                    // Calculate how far the container has traveled through the viewport
-                    const distance = windowHeight - rect.top;
+                    // Calculate distance from center of viewport to center of container
+                    const containerCenter = rect.top + rect.height / 2;
+                    const viewportCenter = windowHeight / 2;
+                    const distanceFromCenter = containerCenter - viewportCenter;
 
                     items.forEach((item, index) => {
-                        // Stagger speeds: 0.05 for items 1,3 and 0.1 for items 2,4
-                        const speed = (index % 2 === 0) ? 0.05 : 0.1;
-                        const yPos = distance * speed;
-                        item.style.transform = `translateY(${yPos}px)`;
+                        // More aggressive speeds: 0.12 and 0.22
+                        const speed = (index % 2 === 0) ? 0.12 : 0.22;
+                        const yPos = distanceFromCenter * speed;
+
+                        // Subtle rotation based on scroll position
+                        const rotation = (distanceFromCenter * 0.005) * (index % 2 === 0 ? 1 : -1);
+
+                        item.style.transform = `translateY(${yPos}px) rotate(${rotation}deg)`;
                     });
                 }
-            }, { passive: true });
+            };
+
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            handleScroll(); // Initial call to set positions correctly on load
         });
     </script>
 </body>
