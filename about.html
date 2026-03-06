@@ -532,10 +532,13 @@
                             <div class="top-right"><a href="index.html"
                                     class="paragraph text-white underline">Home</a><a href="about.html"
                                     aria-current="page" class="paragraph text-white underline w--current">About</a><a
-                                    href="projects.html" class="paragraph text-white underline">Projects</a><a
+                                    href="services.html" class="paragraph text-white underline">Services</a><a
                                     href="ramblas-touch.html" class="paragraph text-white underline">Rambla's
-                                    Touch</a><a href="contact.html" class="paragraph text-white underline">Contact</a><a
-                                    href="services.html" class="paragraph text-white underline">Services</a></div>
+                                    Touch</a><a href="projects.html"
+                                    class="paragraph text-white underline">Projects</a><a href="blogs.html"
+                                    class="paragraph text-white underline">Blogs</a><a href="team.html"
+                                    class="paragraph text-white underline">Team</a><a href="contact.html"
+                                    class="paragraph text-white underline">Contact</a></div>
                         </div>
                         <div class="center-line"></div>
                     </div>
@@ -555,16 +558,8 @@
         type="text/javascript"></script>
     <script>
         document.addEventListener("DOMContentLoaded", function () {
-            const observer = new IntersectionObserver((entries) => {
-                entries.forEach((entry) => {
-                    if (entry.isIntersecting) {
-                        entry.target.classList.add('smooth-zoom');
-                    }
-                });
-            }, { threshold: 0.3 });
-
             document.querySelectorAll('.zoom-target').forEach(el => {
-                observer.observe(el);
+                el.classList.add('smooth-zoom');
             });
         });
     </script>

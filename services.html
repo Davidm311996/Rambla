@@ -302,12 +302,14 @@
                                     class="sub-text text-white">Inta</a></div>
                             <div class="top-right"><a href="index.html"
                                     class="paragraph text-white underline">Home</a><a href="about.html"
-                                    class="paragraph text-white underline">About</a><a href="projects.html"
-                                    class="paragraph text-white underline">Projects</a><a href="ramblas-touch.html"
-                                    class="paragraph text-white underline">Rambla's Touch</a><a href="contact.html"
-                                    class="paragraph text-white underline">Contact</a><a href="services.html"
-                                    aria-current="page" class="paragraph text-white underline w--current">Services</a>
-                            </div>
+                                    class="paragraph text-white underline">About</a><a href="services.html"
+                                    aria-current="page" class="paragraph text-white underline w--current">Services</a><a
+                                    href="ramblas-touch.html" class="paragraph text-white underline">Rambla's
+                                    Touch</a><a href="projects.html"
+                                    class="paragraph text-white underline">Projects</a><a href="blogs.html"
+                                    class="paragraph text-white underline">Blogs</a><a href="team.html"
+                                    class="paragraph text-white underline">Team</a><a href="contact.html"
+                                    class="paragraph text-white underline">Contact</a></div>
                         </div>
                         <div class="center-line"></div>
                     </div>
@@ -323,6 +325,35 @@
         type="text/javascript"></script>
     <script src="https://cdn.prod.website-files.com/697a72996780635254f431ca/js/webflow.1970cfaa.b14ac50db15d7873.js"
         type="text/javascript"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.zoom-target').forEach(el => {
+                el.classList.add('smooth-zoom');
+            });
+        });
+    </script>
+    <style>
+        .zoom-target {
+            opacity: 0;
+            transform: scale(0.9);
+        }
+
+        @keyframes smoothZoomIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .zoom-target.smooth-zoom {
+            animation: smoothZoomIn 2.5s ease-out forwards;
+        }
+    </style>
 </body>
 
 </html>
