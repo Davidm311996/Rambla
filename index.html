@@ -479,26 +479,26 @@
             <div style="text-align: center; margin-bottom: 40px;">
                 <h2 class="h2 text-white">Driving results</h2>
             </div>
-            <div
+            <div id="parallax-results-container"
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; width: 100%; max-width: 1000px; margin: 0 auto;">
-                <div class="result-box-content"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="result-box-content parallax-item"
+                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
                     <div class="inside-box-content"
                         style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
                         <h3 class="h4 text-white" style="margin: 0;">50+</h3>
                         <p class="paragraph text-white result" style="margin: 0;">Projects Delivered Under Mandate</p>
                     </div>
                 </div>
-                <div class="result-box-content"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="result-box-content parallax-item"
+                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
                     <div class="inside-box-content"
                         style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
                         <h3 class="h4 text-white" style="margin: 0;">£5M+</h3>
                         <p class="paragraph text-white result" style="margin: 0;">Assets Acquired with Precision</p>
                     </div>
                 </div>
-                <div class="result-box-content"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="result-box-content parallax-item"
+                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
                     <div class="inside-box-content"
                         style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
                         <h3 class="h4 text-white" style="margin: 0;">100%</h3>
@@ -506,8 +506,8 @@
                             Recommendations</p>
                     </div>
                 </div>
-                <div class="result-box-content"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                <div class="result-box-content parallax-item"
+                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
                     <div class="inside-box-content"
                         style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
                         <h3 class="h4 text-white" style="margin: 0;">1:1</h3>
@@ -962,6 +962,32 @@
             transform: scale(1);
         }
     </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const container = document.getElementById('parallax-results-container');
+            const items = document.querySelectorAll('.parallax-item');
+
+            if (!container || items.length === 0) return;
+
+            window.addEventListener('scroll', function () {
+                const rect = container.getBoundingClientRect();
+                const windowHeight = window.innerHeight;
+
+                // Only animate if container is partially in viewport
+                if (rect.top < windowHeight && rect.bottom > 0) {
+                    // Calculate how far the container has traveled through the viewport
+                    const distance = windowHeight - rect.top;
+
+                    items.forEach((item, index) => {
+                        // Stagger speeds: 0.05 for items 1,3 and 0.1 for items 2,4
+                        const speed = (index % 2 === 0) ? 0.05 : 0.1;
+                        const yPos = distance * speed;
+                        item.style.transform = `translateY(${yPos}px)`;
+                    });
+                }
+            }, { passive: true });
+        });
+    </script>
 </body>
 
 </html>
