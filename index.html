@@ -397,8 +397,8 @@
                         <div class="service-text-left">
                             <div class="services-animated-text-wrap">
                                 <div class="image-text-wrap one">
-                                    <div data-w-id="1b19bb20-dccc-588b-19e8-f1a69778e1d9" style="opacity:0"
-                                        class="services-animation-details-wrap">
+                                    <div id="step-one-trigger" data-w-id="1b19bb20-dccc-588b-19e8-f1a69778e1d9"
+                                        style="opacity:0" class="services-animation-details-wrap">
                                         <h3 class="h5">01</h3>
                                         <div class="services-description-wrap">
                                             <h3 class="h5">Discover &amp; Align</h3>
@@ -429,7 +429,7 @@
                                             src="Assets/Execution/2.jpg" loading="lazy" alt="Service Image"
                                             class="cover-image services" /></div>
                                 </div>
-                                <div class="image-text-wrap two">
+                                <div id="turnkey-trigger" class="image-text-wrap two">
                                     <div data-w-id="0ddede87-a362-78b1-25ec-c72cc77dad5b" style="opacity:0"
                                         class="services-animation-details-wrap">
                                         <h3 class="h5">03</h3>
@@ -450,12 +450,14 @@
                         <div id="w-node-_7e41474e-78c0-6634-ef68-a80792d1018f-54f4326d"
                             data-w-id="7e41474e-78c0-6634-ef68-a80792d1018f" style="opacity:0"
                             class="services-animated-right tab-hide">
-                            <div class="cover-image-wrap home-services one"><img src="Assets/Execution/1.png"
-                                    loading="lazy" alt="Service Top Image " class="cover-image services" /></div>
+                            <div id="first-photo-wrap" class="cover-image-wrap home-services one"><img
+                                    src="Assets/Execution/1.png" loading="lazy" alt="Service Top Image "
+                                    class="cover-image services" /></div>
                             <div class="cover-image-wrap home-services two"><img src="Assets/Execution/2.jpg"
                                     loading="lazy" alt="Service Middile Image " class="cover-image services" /></div>
-                            <div class="cover-image-wrap home-services three"><img src="Assets/Execution/3.jpg"
-                                    loading="lazy" alt="Service Second Image" class="cover-image services" /></div>
+                            <div id="third-photo-wrap" class="cover-image-wrap home-services three"><img
+                                    src="Assets/Execution/3.jpg" loading="lazy" alt="Service Second Image"
+                                    class="cover-image services" /></div>
                         </div>
                     </div>
                     <div class="more-service-button-wrap"><a data-w-id="9382defc-7104-f8ce-240f-b908b80f9071"
@@ -473,46 +475,51 @@
         </div>
     </section>
 
-    <!-- New Clean Driving Results Section -->
-    <section class="section black" style="padding: 60px 0 70px; min-height: auto !important;">
+    <section data-w-id="5af6118a-51d6-f5a4-26b2-8daa8d3f13cb" class="section black height">
         <div class="container">
-            <div style="text-align: center; margin-bottom: 40px;">
-                <h2 class="h2 text-white">Driving results</h2>
-            </div>
-            <div id="parallax-results-container" class="results-grid"
-                style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; width: 100%; margin: 0 auto;">
-                <div class="result-box-content parallax-item"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
-                    <div class="inside-box-content"
-                        style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
-                        <h3 class="h4 text-white" style="margin: 0;">50+</h3>
-                        <p class="paragraph text-white result" style="margin: 0;">Projects Delivered Under Mandate</p>
-                    </div>
-                </div>
-                <div class="result-box-content parallax-item"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
-                    <div class="inside-box-content"
-                        style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
-                        <h3 class="h4 text-white" style="margin: 0;">£5M+</h3>
-                        <p class="paragraph text-white result" style="margin: 0;">Assets Acquired with Precision</p>
-                    </div>
-                </div>
-                <div class="result-box-content parallax-item"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
-                    <div class="inside-box-content"
-                        style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
-                        <h3 class="h4 text-white" style="margin: 0;">100%</h3>
-                        <p class="paragraph text-white result" style="margin: 0;">Continuing Clients &amp;
-                            Recommendations</p>
-                    </div>
-                </div>
-                <div class="result-box-content parallax-item"
-                    style="margin: 0; height: auto; min-height: 220px; display: flex; flex-direction: column; justify-content: center; align-items: center; will-change: transform;">
-                    <div class="inside-box-content"
-                        style="text-align: center; display: flex; flex-direction: column; gap: 15px;">
-                        <h3 class="h4 text-white" style="margin: 0;">1:1</h3>
-                        <p class="paragraph text-white result" style="margin: 0;">Single execution lead per project
-                            ensuring continuity and focus</p>
+            <div class="result-height-box">
+                <div class="result-sticky-box">
+                    <div data-w-id="4639a693-9ce1-bd66-dfba-5fef2a7871e2" class="results-layout">
+                        <div class="result-details-wrap">
+                            <div class="result-text-wrap">
+                                <div class="result-center">
+                                    <h2 class="h2 text-white">Driving results</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="results-all-content">
+                            <div class="result-top">
+                                <div id="w-node-d3332a37-28b8-0ab1-931a-b57ae2001946-54f4326d"
+                                    class="result-box-content one">
+                                    <div class="inside-box-content">
+                                        <h3 class="h4 text-white">50+</h3>
+                                        <p class="paragraph text-white result">Projects Delivered Under Mandate</p>
+                                    </div>
+                                </div>
+                                <div class="result-box-content two">
+                                    <div class="inside-box-content">
+                                        <h3 class="h4 text-white">£5M+</h3>
+                                        <p class="paragraph text-white result">Assets Acquired with Precision</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="result-bottom">
+                                <div class="result-box-content three">
+                                    <div class="inside-box-content">
+                                        <h3 class="h4 text-white">100%</h3>
+                                        <p class="paragraph text-white result">Continuing Clients &amp;
+                                            Recommendations</p>
+                                    </div>
+                                </div>
+                                <div class="result-box-content four">
+                                    <div class="inside-box-content">
+                                        <h3 class="h4 text-white">1:1</h3>
+                                        <p class="paragraph text-white result">Single execution lead per project
+                                            ensuring continuity and focus</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -613,7 +620,8 @@
                                         </div>
                                         <div class="comment-bottom-layout comment">
                                             <div class="commentator-info-wrap">
-                                                <h3 class="h6">Reference available upon request</h3>
+                                                <h3 class="h6" style="line-height: 1.2;">Reference available <br>upon
+                                                    request</h3>
                                             </div>
                                         </div>
                                     </div>
@@ -785,7 +793,7 @@
                         </div>
                         <h2 class="h2"><sub>Rambla&#x27;s Touch</sub></h2>
                     </div>
-                    <a data-w-id="9382defc-7104-f8ce-240f-b908b80f9071" href="blogs.html"
+                    <a data-w-id="9382defc-7104-f8ce-240f-b908b80f9071" href="insights.html"
                         class="button-black w-inline-block">
                         <p class="button-text text-white no-wrap">Explore all</p>
                         <div class="button-arrow white w-embed"><svg width="18" height="18" viewBox="0 0 18 18"
@@ -905,12 +913,7 @@
                         <div class="top-right"><a href="index.html" aria-current="page"
                                 class="paragraph text-white underline w--current">Home</a><a href="about.html"
                                 class="paragraph text-white underline">About</a><a href="services.html"
-                                class="paragraph text-white underline">Services</a><a href="ramblas-touch.html"
-                                class="paragraph text-white underline">Projects</a><a href="blogs.html"
-                                class="paragraph text-white underline">Blogs</a><a href="insights.html"
-                                class="paragraph text-white underline">Insights</a><a href="team.html"
-                                class="paragraph text-white underline">Team</a><a href="contact.html"
-                                class="paragraph text-white underline">Contact</a></div>
+                                class="paragraph text-white underline">Services</a></div>
                     </div>
                     <div class="center-line"></div>
                 </div>
@@ -955,52 +958,58 @@
             opacity: 1;
             transform: scale(1);
         }
-
-        @media (max-width: 991px) {
-            .results-grid {
-                grid-template-columns: repeat(2, 1fr) !important;
-            }
-        }
-
-        @media (max-width: 479px) {
-            .results-grid {
-                grid-template-columns: 1fr !important;
-            }
-        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
-            const container = document.getElementById('parallax-results-container');
-            const items = document.querySelectorAll('.parallax-item');
+            const stepOneTrigger = document.getElementById('step-one-trigger');
+            const turnkeyTrigger = document.getElementById('turnkey-trigger');
+            const firstPhoto = document.getElementById('first-photo-wrap');
+            const lastPhoto = document.getElementById('third-photo-wrap');
+            const middlePhoto = document.querySelector('.cover-image-wrap.home-services.two');
 
-            if (!container || items.length === 0) return;
+            if (!firstPhoto || !lastPhoto) return;
 
-            const handleScroll = function () {
-                const rect = container.getBoundingClientRect();
-                const windowHeight = window.innerHeight;
-
-                // Only animate if container is partially in viewport
-                if (rect.top < windowHeight && rect.bottom > 0) {
-                    // Calculate distance from center of viewport to center of container
-                    const containerCenter = rect.top + rect.height / 2;
-                    const viewportCenter = windowHeight / 2;
-                    const distanceFromCenter = containerCenter - viewportCenter;
-
-                    items.forEach((item, index) => {
-                        // More aggressive speeds: 0.12 and 0.22
-                        const speed = (index % 2 === 0) ? 0.12 : 0.22;
-                        const yPos = distanceFromCenter * speed;
-
-                        // Subtle rotation based on scroll position
-                        const rotation = (distanceFromCenter * 0.005) * (index % 2 === 0 ? 1 : -1);
-
-                        item.style.transform = `translateY(${yPos}px) rotate(${rotation}deg)`;
-                    });
-                }
+            const observerOptions = {
+                threshold: [0, 0.05, 0.1, 0.5, 0.9, 1]
             };
 
-            window.addEventListener('scroll', handleScroll, { passive: true });
-            handleScroll(); // Initial call to set positions correctly on load
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.target.id === 'step-one-trigger') {
+                        // Maximize first photo exit speed
+                        // Transition out immediately as it moves away from top (ratio < 0.95)
+                        if (entry.intersectionRatio < 0.95 && entry.boundingClientRect.top < 0) {
+                            firstPhoto.style.transition = 'opacity 0.2s ease-in, transform 0.2s ease-in';
+                            firstPhoto.style.opacity = '0';
+                            firstPhoto.style.transform = 'translateX(200px) rotate(8deg)';
+                        } else if (entry.intersectionRatio > 0.98) {
+                            firstPhoto.style.transition = 'opacity 0.3s ease-out, transform 0.3s ease-out';
+                            firstPhoto.style.opacity = '1';
+                            firstPhoto.style.transform = 'none';
+                        }
+                    }
+
+                    if (entry.target.id === 'turnkey-trigger') {
+                        // Accelerate last photo entrance
+                        // Reveal "a lot" sooner: trigger when top of Step 3 just enters (5% visibility)
+                        if (entry.intersectionRatio > 0.05) {
+                            lastPhoto.style.transition = 'opacity 0.4s ease-out, transform 0.4s ease-out';
+                            lastPhoto.style.opacity = '1';
+                            lastPhoto.style.zIndex = '30';
+
+                            if (middlePhoto) middlePhoto.style.zIndex = '1';
+                            if (firstPhoto) firstPhoto.style.opacity = '0';
+                        } else if (entry.boundingClientRect.top > window.innerHeight) {
+                            // Reset when scrolling back up
+                            lastPhoto.style.opacity = '0';
+                            lastPhoto.style.zIndex = 'auto';
+                        }
+                    }
+                });
+            }, observerOptions);
+
+            if (stepOneTrigger) observer.observe(stepOneTrigger);
+            if (turnkeyTrigger) observer.observe(turnkeyTrigger);
         });
     </script>
 </body>
