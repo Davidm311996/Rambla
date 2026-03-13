@@ -8,6 +8,9 @@
     <style>
         .w-webflow-badge {
             display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
         }
     </style>
     <meta charset="utf-8" />
@@ -451,6 +454,16 @@
             transform: scale(1);
         }
     </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const badge = document.querySelector('.w-webflow-badge');
+            if (badge) badge.remove();
+            new MutationObserver((mutations, obs) => {
+                const b = document.querySelector('.w-webflow-badge');
+                if (b) { b.remove(); obs.disconnect(); }
+            }).observe(document.body, { childList: true, subtree: true });
+        });
+    </script>
 </body>
 
 </html>

@@ -34,6 +34,9 @@
     <style>
         .w-webflow-badge {
             display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            pointer-events: none !important;
         }
 
         .starix-bottom.one {
@@ -808,7 +811,7 @@
                     <div class="top-collection-list-wrapper w-dyn-list">
                         <div role="list" class="top-collection-list w-dyn-items">
                             <div role="listitem" class="top-collection-item w-dyn-item"><a
-                                    href="#/email-campaigns-that-convert-more-leads"
+                                    href="insights/Bespoke%20Interiors.html"
                                     class="blogs-top-layout w-inline-block">
                                     <div data-w-id="f9bace02-e330-d087-0af4-1e2416cc0bc0"
                                         class="blogs-top-content-wrap">
@@ -831,7 +834,7 @@
                     <div class="bottom-collection-list-wrapper w-dyn-list">
                         <div role="list" class="bottom-collection-list w-dyn-items">
                             <div role="listitem" class="bottom-collection-item w-dyn-item"><a
-                                    href="#/seo-techniques-to-boost-online-visibility"
+                                    href="insights/Guided%20viewings.html"
                                     class="blogs-bottom-layout w-inline-block">
                                     <div data-w-id="4b59c6b9-2c88-b1bb-32b2-2e17ad99c29f" style="opacity:0"
                                         class="blogs-bottom-content-wrap">
@@ -853,7 +856,7 @@
                                 <link rel="prefetch" href="#/seo-techniques-to-boost-online-visibility" />
                             </div>
                             <div role="listitem" class="bottom-collection-item w-dyn-item"><a
-                                    href="#/social-media-tactics-for-maximum-reach"
+                                    href="insights/Curated%20Connections.html"
                                     class="blogs-bottom-layout w-inline-block">
                                     <div data-w-id="4b59c6b9-2c88-b1bb-32b2-2e17ad99c29f" style="opacity:0"
                                         class="blogs-bottom-content-wrap">
@@ -1010,6 +1013,16 @@
 
             if (stepOneTrigger) observer.observe(stepOneTrigger);
             if (turnkeyTrigger) observer.observe(turnkeyTrigger);
+        });
+    </script>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const badge = document.querySelector('.w-webflow-badge');
+            if (badge) badge.remove();
+            new MutationObserver((mutations, obs) => {
+                const b = document.querySelector('.w-webflow-badge');
+                if (b) { b.remove(); obs.disconnect(); }
+            }).observe(document.body, { childList: true, subtree: true });
         });
     </script>
 </body>

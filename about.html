@@ -137,12 +137,12 @@
                                                     d="M3.85073e-06 42.5878L1.28866 33.9372C3.92325 34.159 6.01375 33.7154 7.56014 32.6063C9.10653 31.5527 10.1661 30.0277 10.7388 28.0314C11.2543 26.0906 11.3402 23.8725 10.9966 21.3771L5.70503e-06 21.3771L7.57388e-06 -4.37114e-06L21.2199 -2.51603e-06L21.2199 22.2089C21.2199 29.4732 19.4444 34.9631 15.8935 38.6784C12.3425 42.4492 7.04468 43.7523 3.85073e-06 42.5878ZM28.7801 42.5878L30.0687 33.9372C32.7033 34.159 34.7938 33.7154 36.3402 32.6063C37.8866 31.5527 38.9462 30.0277 39.5189 28.0314C40.0344 26.0906 40.1203 23.8725 39.7766 21.3771L28.7801 21.3771L28.7801 -1.85511e-06L50 0L50 22.2089C50 29.4732 48.2245 34.9631 44.6735 38.6784C41.1226 42.4492 35.8247 43.7524 28.7801 42.5878Z"
                                                     fill="currentcolor" />
                                         </div>
-                                        <p class="paragraph white">Creativity builds the bridge between ideas and
-                                            strategies, delivering meaningful impact every time.</p>
+                                        <p class="paragraph white">The most rewarding part of our work is helping
+                                            clients accomplish what once began as an idea.</p>
                                     </div>
                                     <div class="brand-left-bottom">
                                         <div class="person-info-wrap">
-                                            <div class="person-text">A. Morgan</div>
+                                            <div class="person-text">O. Odesanya</div>
                                             <p class="paragraph white">Founder &amp; CEO</p>
                                         </div>
                                     </div>
@@ -353,7 +353,8 @@
                                 <div role="list" class="member-collection-list w-dyn-items">
                                     <div role="listitem" class="member-collection-item w-dyn-item">
                                         <div class="members-bottom one">
-                                            <div class="member-details-wrap">
+                                            <div class="member-details-wrap"
+                                                onclick="window.location.href='teams.html';" style="cursor: pointer;">
                                                 <div class="cover-image-wrap member">
                                                     <div class="member-social-wrap one"><span class="social-link"
                                                             style="cursor: default;">FB</span><span class="social-link"
@@ -389,7 +390,8 @@
                                 <div role="list" class="member-collection-list w-dyn-items">
                                     <div role="listitem" class="member-collection-item w-dyn-item">
                                         <div class="members-bottom two">
-                                            <div class="member-details-wrap">
+                                            <div class="member-details-wrap"
+                                                onclick="window.location.href='teams.html';" style="cursor: pointer;">
                                                 <div class="cover-image-wrap member"><img src="Assets/Team/2.png"
                                                         loading="lazy" alt="Nora Martinez" class="cover-image member" />
                                                     <div class="member-social-wrap two"><span class="social-link"
@@ -425,7 +427,8 @@
                                 <div role="list" class="member-collection-list w-dyn-items">
                                     <div role="listitem" class="member-collection-item w-dyn-item">
                                         <div class="members-bottom three">
-                                            <div class="member-details-wrap">
+                                            <div class="member-details-wrap"
+                                                onclick="window.location.href='teams.html';" style="cursor: pointer;">
                                                 <div class="cover-image-wrap member"><img src="Assets/Team/3.jpg"
                                                         loading="lazy" alt="Emmanuel Adedokun"
                                                         class="cover-image member" />
@@ -566,6 +569,16 @@
             transform: scale(1);
         }
     </style>
+    <script>
+        window.addEventListener('DOMContentLoaded', () => {
+            const badge = document.querySelector('.w-webflow-badge');
+            if (badge) badge.remove();
+            new MutationObserver((mutations, obs) => {
+                const b = document.querySelector('.w-webflow-badge');
+                if (b) { b.remove(); obs.disconnect(); }
+            }).observe(document.body, { childList: true, subtree: true });
+        });
+    </script>
 </body>
 
 </html>
