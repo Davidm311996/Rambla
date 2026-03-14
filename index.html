@@ -152,22 +152,15 @@
         .mini-image-slider {
             display: flex !important;
             width: max-content !important;
-            gap: 0 !important;
+            gap: 10px !important;
             margin: 0 !important;
             padding: 0 !important;
-            animation: marquee-mini 20s linear infinite !important;
-            will-change: transform;
-        }
-
-        @keyframes marquee-mini {
-            0% { transform: translateX(0); }
-            100% { transform: translateX(-50%); }
         }
 
         .image-holder {
             display: flex !important;
             flex-shrink: 0 !important;
-            gap: 0 !important;
+            gap: 10px !important;
             margin: 0 !important;
             padding: 0 !important;
         }
@@ -177,8 +170,9 @@
             height: 80px !important;
             margin: 0 !important;
             padding: 0 !important;
-            border-radius: 0 !important;
+            border-radius: 12px !important;
             flex-shrink: 0 !important;
+            overflow: hidden !important;
         }
 
         .cover-image-wrap.small .cover-image {
@@ -378,7 +372,7 @@
                         <div class="story-image-slider-box">
                             <div data-w-id="cab279d3-ed2b-84a9-5978-74dc111a80b8" class="story-image-slider">
                                     <div class="mini-image-slider">
-                                        <div class="image-holder one">
+                                        <div class="image-holder">
                                             <div class="cover-image-wrap small"><img
                                                     src="Assets/Execution lead/1.jpg"
                                                     loading="lazy" alt="Story Image" class="cover-image small" /></div>
@@ -389,25 +383,7 @@
                                                     src="Assets/Execution lead/3.JPG"
                                                     loading="lazy" alt="Story Image" class="cover-image small" /></div>
                                         </div>
-                                        <div class="image-holder two">
-                                            <div class="cover-image-wrap small"><img
-                                                    src="Assets/Execution lead/2.JPG"
-                                                    loading="lazy" alt="Author Image " class="cover-image small" />
-                                            </div>
-                                            <div class="cover-image-wrap small"><img
-                                                    src="Assets/Execution lead/3.JPG"
-                                                    loading="lazy" alt="Author Image " class="cover-image small" />
-                                            </div>
-                                            <div class="cover-image-wrap small"><img
-                                                    src="Assets/Execution lead/1.jpg"
-                                                    loading="lazy" alt="Author Image " class="cover-image small" />
-                                            </div>
-                                        </div>
-                                        <!-- Duplicate for loop -->
-                                        <div class="image-holder one">
-                                            <div class="cover-image-wrap small"><img
-                                                    src="Assets/Execution lead/1.jpg"
-                                                    loading="lazy" alt="Story Image" class="cover-image small" /></div>
+                                    </div>
                                             <div class="cover-image-wrap small"><img
                                                     src="Assets/Execution lead/2.JPG"
                                                     loading="lazy" alt="Story Image" class="cover-image small" /></div>
