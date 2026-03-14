@@ -148,38 +148,6 @@
             }
         }
 
-        /* 1x1 Photo Slider Loop */
-        .mini-image-slider {
-            display: flex !important;
-            width: max-content !important;
-            gap: 10px !important;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        .image-holder {
-            display: flex !important;
-            flex-shrink: 0 !important;
-            gap: 10px !important;
-            margin: 0 !important;
-            padding: 0 !important;
-        }
-
-        .cover-image-wrap.small {
-            width: 80px !important;
-            height: 80px !important;
-            margin: 0 !important;
-            padding: 0 !important;
-            border-radius: 12px !important;
-            flex-shrink: 0 !important;
-            overflow: hidden !important;
-        }
-
-        .cover-image-wrap.small .cover-image {
-            width: 100% !important;
-            height: 100% !important;
-            object-fit: cover !important;
-        }
     </style>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" />
@@ -372,15 +340,18 @@
                         <div class="story-image-slider-box">
                             <div data-w-id="cab279d3-ed2b-84a9-5978-74dc111a80b8" class="story-image-slider">
                                     <div class="mini-image-slider">
-                                        <div class="image-holder">
+                                        <div class="image-holder one">
                                             <div class="cover-image-wrap small"><img
                                                     src="Assets/Execution lead/1.jpg"
-                                                    loading="lazy" alt="Story Image" class="cover-image small" /></div>
+                                                    loading="lazy" alt="Story Image" class="cover-image mini" /></div>
                                             <div class="cover-image-wrap small"><img
                                                     src="Assets/Execution lead/2.JPG"
-                                                    loading="lazy" alt="Story Image" class="cover-image small" /></div>
+                                                    loading="lazy" alt="Story Image" class="cover-image mini" /></div>
                                             <div class="cover-image-wrap small"><img
                                                     src="Assets/Execution lead/3.JPG"
+                                                    loading="lazy" alt="Story Image" class="cover-image mini" /></div>
+                                            <div class="cover-image-wrap small mobile-hide"><img
+                                                    src="Assets/Execution lead/1.jpg"
                                                     loading="lazy" alt="Story Image" class="cover-image small" /></div>
                                         </div>
                                     </div>
