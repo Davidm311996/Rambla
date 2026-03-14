@@ -134,31 +134,31 @@
         margin-bottom: 40px !important;
     }
 
-    /* Reduce Hero & Execution Lead Gap - Aggressive */
+    /* Restore Hero Slider Visibility on Mobile */
     .section {
-        padding-top: 10px !important;
-        padding-bottom: 10px !important;
+        padding-top: 15px !important;
+        padding-bottom: 15px !important;
     }
 
     .banner-image-wrap-bottom {
-        bottom: 5px !important; /* Tighten the curve transition further */
+        bottom: 40px !important; /* Restore some bottom offset for the curve */
     }
 
     .section.black {
-        padding-top: 5px !important; /* Move Execution Lead section even higher */
+        padding-top: 20px !important; /* Restore normal spacing */
     }
 
     .starix-bottom.one img, 
     .starix-slider-wrap {
-        height: 200px !important; /* Drastically reduce slider height on mobile */
+        height: 400px !important; /* Increase height from 200px to restore visibility */
     }
 
     .starix-top {
-        margin-bottom: 0px !important;
-        padding-bottom: 0px !important;
+        margin-bottom: 20px !important;
+        padding-bottom: 10px !important;
     }
 
     .stratix-button-info-wrap {
-        margin-bottom: 10px !important;
+        margin-bottom: 20px !important;
     }
 }
