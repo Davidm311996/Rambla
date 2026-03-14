@@ -134,44 +134,40 @@
         margin-bottom: 40px !important;
     }
 
-    /* Restore Hero Slider Visibility on Mobile */
+    /* Restore Hero Slider Visibility on Mobile - Fix Blocking Masks */
     .section {
         padding-top: 15px !important;
         padding-bottom: 15px !important;
     }
 
+    .banner-image-wrap-top,
     .banner-image-wrap-bottom {
-        bottom: 40px !important; /* Restore some bottom offset for the curve */
-    }
-
-    .section.black {
-        padding-top: 20px !important; /* Restore normal spacing */
-    }
-
-    .starix-bottom.one img, 
-    .starix-slider-wrap {
-        height: 400px !important; /* Increase height from 200px to restore visibility */
-    }
-
-    /* Prevent curves from meeting and hiding the slider images */
-    .carve-image, .carve-image-two {
-        max-height: 120px !important;
-        object-fit: cover !important;
-    }
-
-    .carve-image-two {
-        transform: scaleY(1.0) !important; /* Remove 2.0 scale which covers too much on mobile */
+        background-color: transparent !important; /* Force transparent to reveal slider behind */
     }
 
     .banner-image-wrap-bottom {
         bottom: 0px !important;
     }
 
-    .starix-top {
-        margin-bottom: 20px !important;
-        padding-bottom: 10px !important;
+    .section.black {
+        padding-top: 20px !important;
     }
 
+    .starix-bottom.one img, 
+    .starix-slider-wrap {
+        height: 400px !important; /* Restore height for visibility window */
+    }
+
+    .carve-image, .carve-image-two {
+        max-height: 120px !important; /* Capping curve thickness */
+        object-fit: cover !important;
+    }
+
+    .carve-image-two {
+        transform: scaleY(1.0) !important; /* Prevent total coverage on mobile */
+    }
+
+    .starix-top, 
     .stratix-button-info-wrap {
         margin-bottom: 20px !important;
     }
