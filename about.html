@@ -9,6 +9,7 @@
         .w-webflow-badge {
             display: none !important;
         }
+            }
     </style>
     <meta charset="utf-8" />
     <title>About - Rambla Property Partners</title>
@@ -39,6 +40,107 @@
     <style>
         .w-webflow-badge {
             display: none !important;
+        }
+
+        /* Centralized mobile-polished.css linked above */
+        @media (max-width: 767px) {
+            
+            .navbar-link-wrap {
+                width: 100% !important;
+                background-color: #fff !important;
+                border-top: 1px solid #eee !important;
+                border-bottom: 1px solid #eee !important;
+            }
+            
+            .nav-link {
+                padding: 15px 20px !important;
+                text-align: center !important;
+                font-size: 18px !important;
+                display: block !important;
+                border-bottom: 1px solid #f0f0f0 !important;
+                color: #000 !important;
+            }
+            
+            .button-wrap {
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 15px !important;
+                width: 100% !important;
+            }
+            
+            .button-blackpd, .button-black, .button-white {
+                width: 100% !important;
+                text-align: center !important;
+                justify-content: center !important;
+                margin: 0 !important;
+            }
+            
+            .container {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                max-width: 100vw !important;
+            }
+
+            /* About Page Specifics */
+            .brand-bottom {
+                flex-direction: column !important;
+                gap: 30px !important;
+            }
+            
+            .purpose-layout {
+                flex-direction: column !important;
+                gap: 40px !important;
+            }
+            
+            .achievement-center {
+                flex-direction: column !important;
+                gap: 30px !important;
+            }
+
+            .members-top {
+                flex-direction: column !important;
+                text-align: center !important;
+                align-items: center !important;
+            }
+
+            .member-collection-list {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .section {
+                padding-top: 40px !important;
+                padding-bottom: 40px !important;
+            }
+
+            .footer-layout {
+                flex-direction: column !important;
+                text-align: center !important;
+                align-items: center !important;
+            }
+
+            .footer-top, .footer-bottom {
+                flex-direction: column !important;
+                align-items: center !important;
+                gap: 20px !important;
+            }
+
+            /* Fix team photo centering */
+            .cover-image.member {
+                object-position: center !important;
+            }
+            
+            /* Reposition Your Vision section */
+            .section.creation {
+                margin-top: -150px !important;
+                position: relative;
+                z-index: 10;
+            }
+            .creation-layout {
+                padding-bottom: 20px !important;
+            }
+            .image-overlay-box {
+                height: 80% !important;
+            }
         }
     </style>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
@@ -241,6 +343,40 @@
                 </div>
             </div>
         </section>
+        <section class="section black">
+            <div class="container">
+                <div class="credibility-layout">
+                    <div class="credibility-heading-wrap">
+                        <h2 class="h2 text-white"><sub>Master delivery</sub></h2>
+                    </div>
+                    <div class="credibility-box">
+                        <div class="credibility-bottom">
+                            <div class="credibility-info-box">
+                                <div id="w-node-_2f27c78f-d993-8748-7654-0240a7a217c6-54f432a4"
+                                    class="credibility-info-left">
+                                    <h3 class="h6 text-white">Precision in every delivery</h3>
+                                </div>
+                            </div>
+                            <div class="credibility-info-box">
+                                <div id="w-node-_031ac25d-ec11-1d80-869f-9a3e557b6eed-54f432a4"
+                                    class="credibility-info-left">
+                                    <h3 class="h6 text-white">Controlled execution from  start to finish</h3>
+                                </div>
+                            </div>
+                            <div class="credibility-info-box">
+                                <div id="w-node-_994ac0c1-1a3f-3de7-5085-fdba4a93d56f-54f432a4"
+                                    class="credibility-info-left">
+                                    <h3 class="h6 text-white">Outcome delivered, not promised</h3>
+                                </div>
+                                <div class="credibility-info-right">
+                                    <div class="credibility-immage-wrap"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="section">
             <div class="container">
                 <div class="achievement-layout">
@@ -271,40 +407,6 @@
                                     loading="lazy" sizes="100vw"
                                     srcset="https://cdn.prod.website-files.com/697a72996780635254f431ca/6998bd6d8d0f99ec55174943_548b562d-4257-4018-8b89-6f693dfd43ce-p-500.png 500w, https://cdn.prod.website-files.com/697a72996780635254f431ca/6998bd6d8d0f99ec55174943_548b562d-4257-4018-8b89-6f693dfd43ce-p-800.png 800w, https://cdn.prod.website-files.com/697a72996780635254f431ca/6998bd6d8d0f99ec55174943_548b562d-4257-4018-8b89-6f693dfd43ce-p-1080.png 1080w, https://cdn.prod.website-files.com/697a72996780635254f431ca/6998bd6d8d0f99ec55174943_548b562d-4257-4018-8b89-6f693dfd43ce.png 1536w"
                                     alt="Meeting Image" class="cover-image achievement" /></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section black">
-            <div class="container">
-                <div class="credibility-layout">
-                    <div class="credibility-heading-wrap">
-                        <h2 class="h2 text-white"><sub>Master delivery</sub></h2>
-                    </div>
-                    <div class="credibility-box">
-                        <div class="credibility-bottom">
-                            <div class="credibility-info-box">
-                                <div id="w-node-_2f27c78f-d993-8748-7654-0240a7a217c6-54f432a4"
-                                    class="credibility-info-left">
-                                    <h3 class="h6 text-white">Precision in every delivery</h3>
-                                </div>
-                            </div>
-                            <div class="credibility-info-box">
-                                <div id="w-node-_031ac25d-ec11-1d80-869f-9a3e557b6eed-54f432a4"
-                                    class="credibility-info-left">
-                                    <h3 class="h6 text-white">Controlled execution from  start to finish</h3>
-                                </div>
-                            </div>
-                            <div class="credibility-info-box">
-                                <div id="w-node-_994ac0c1-1a3f-3de7-5085-fdba4a93d56f-54f432a4"
-                                    class="credibility-info-left">
-                                    <h3 class="h6 text-white">Outcome delivered, not promised</h3>
-                                </div>
-                                <div class="credibility-info-right">
-                                    <div class="credibility-immage-wrap"></div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -395,7 +497,6 @@
                                                 <div class="cover-image-wrap member"><img src="Assets/Team/2.png"
                                                         loading="lazy" alt="Nora Martinez" class="cover-image member" />
                                                     <div class="member-social-wrap two"><span class="social-link"
-                                                            style="cursor: default;">FB</span><span class="social-link"
                                                             style="cursor: default;">IG</span><span class="social-link"
                                                             style="cursor: default;">In</span>
                                                     </div>
@@ -433,7 +534,6 @@
                                                         loading="lazy" alt="Emmanuel Adedokun"
                                                         class="cover-image member" />
                                                     <div class="member-social-wrap three"><span class="social-link"
-                                                            style="cursor: default;">FB</span><span class="social-link"
                                                             style="cursor: default;">IG</span><span class="social-link"
                                                             style="cursor: default;">In</span>
                                                     </div>
@@ -513,8 +613,7 @@
                     </div>
                     <div data-w-id="928c2780-a577-8574-6700-6a0d8d279a90" class="footer-bottom">
                         <div class="bottom-top">
-                            <div class="spcial-icon-wrap"><a href="https://www.facebook.com/"
-                                    class="sub-text text-white">FB</a><a href="https://x.com/"
+                            <div class="spcial-icon-wrap"><a href="https://x.com/"
                                     class="sub-text text-white">youtube</a><a href="https://www.linkedin.com/"
                                     class="sub-text text-white">linkedin</a><a href="https://www.instagram.com/"
                                     class="sub-text text-white">Inta</a></div>
@@ -579,6 +678,7 @@
             }).observe(document.body, { childList: true, subtree: true });
         });
     </script>
+    <script src="js/mobile-polished.js"></script>
 </body>
 
 </html>

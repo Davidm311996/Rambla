@@ -114,6 +114,39 @@
                 opacity: 0;
             }
         }
+        @media (max-width: 767px) {
+            .container {
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                max-width: 100vw !important;
+            }
+
+            .w-layout-grid {
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+            
+            .section {
+                padding-top: 40px !important;
+                padding-bottom: 40px !important;
+            }
+
+            .stratix-button-wrap {
+                flex-direction: column !important;
+                width: 100% !important;
+            }
+
+            .feedback-box-comment-wrap {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            .banner-text-wrap {
+                margin-top: 20px !important;
+            }
+        }
     </style>
     <link href="https://fonts.googleapis.com" rel="preconnect" />
     <link href="https://fonts.gstatic.com" rel="preconnect" />
@@ -147,6 +180,7 @@
             "hideDecimalForWholeNumbers": false
         };
     </script>
+    <link href="css/mobile-polished.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -160,11 +194,13 @@
                         <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
                             data-easing2="ease" role="banner" class="navbar-wrap w-nav">
                             <div class="navbar-container w-container">
-                                <nav role="navigation" class="navbar-link-wrap w-nav-menu"><a href="index.html"
-                                        aria-current="page" class="nav-link w-nav-link w--current">Home</a><a
-                                        href="services.html" class="nav-link w-nav-link">Services</a>
+                                <nav role="navigation" class="navbar-link-wrap w-nav-menu">
+                                    <a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">Home</a>
+                                    <a href="projects.html" class="nav-link w-nav-link">Projects</a>
+                                    <a href="services.html" class="nav-link w-nav-link">Services</a>
                                     <a href="about.html" class="nav-link w-nav-link">About</a>
-
+                                    <a href="teams.html" class="nav-link w-nav-link">Teams</a>
+                                    <a href="ramblas-touch.html" class="nav-link w-nav-link">Rambla's Touch</a>
                                 </nav>
                                 <div class="menu-button w-nav-button">
                                     <div class="w-icon-nav-menu"></div>
@@ -195,7 +231,7 @@
         </div>
         <div class="stratix-title-info-wrap">
             <div class="banner-text-wrap-box">
-                <div style="opacity:1 !important; display: flex; justify-content: center; align-items: center; margin-top: 72px;"
+                <div style="opacity:1 !important; display: flex; justify-content: center; align-items: center; margin-top: 20px;"
                     class="banner-text-wrap">
                     <img src="Assets/Logo/Logo.jpg" alt="Rambla Logo"
                         style="max-width: 936px; width: 100%; height: auto;">
@@ -205,7 +241,7 @@
                 PROPERTIES AND INVESTMENTS</p>
         </div>
     </div>
-    <section class="section" style="padding-top: 36px;">
+    <section class="section" style="padding-top: 0px;">
         <div>
             <div class="stratix-layout">
                 <div class="starix-top">
@@ -412,7 +448,7 @@
                                     </div>
                                     <div data-w-id="2375c0d9-ae9a-6e28-6019-3b103ae29a61"
                                         class="cover-image-wrap home-services dex-hide"><img
-                                            src="Assets/Execution/1.png" loading="lazy" alt="Service Image"
+                                            src="Assets/Execution lead/1.jpg" loading="lazy" alt="Service Image"
                                             class="cover-image services" /></div>
                                 </div>
                                 <div id="w-node-f282c55b-ae03-3935-e016-6cc5946c1912-54f4326d"
@@ -429,7 +465,7 @@
                                     </div>
                                     <div data-w-id="393b256c-45ac-cab9-00c2-086fc42e1b9f"
                                         class="cover-image-wrap home-services dex-hide"><img
-                                            src="Assets/Execution/2.jpg" loading="lazy" alt="Service Image"
+                                            src="Assets/Execution lead/2.JPG" loading="lazy" alt="Service Image"
                                             class="cover-image services" /></div>
                                 </div>
                                 <div id="turnkey-trigger" class="image-text-wrap two">
@@ -445,7 +481,7 @@
                                     </div>
                                     <div data-w-id="498d7554-e5c1-4751-9a94-613467e2e470"
                                         class="cover-image-wrap home-services dex-hide"><img
-                                            src="Assets/Execution/3.jpg" loading="lazy" alt="Service Image"
+                                            src="Assets/Execution lead/3.JPG" loading="lazy" alt="Service Image"
                                             class="cover-image services" /></div>
                                 </div>
                             </div>
@@ -454,12 +490,12 @@
                             data-w-id="7e41474e-78c0-6634-ef68-a80792d1018f" style="opacity:0"
                             class="services-animated-right tab-hide">
                             <div id="first-photo-wrap" class="cover-image-wrap home-services one"><img
-                                    src="Assets/Execution/1.png" loading="lazy" alt="Service Top Image "
+                                    src="Assets/Execution lead/1.jpg" loading="lazy" alt="Service Top Image "
                                     class="cover-image services" /></div>
-                            <div class="cover-image-wrap home-services two"><img src="Assets/Execution/2.jpg"
+                            <div class="cover-image-wrap home-services two"><img src="Assets/Execution lead/2.JPG"
                                     loading="lazy" alt="Service Middile Image " class="cover-image services" /></div>
                             <div id="third-photo-wrap" class="cover-image-wrap home-services three"><img
-                                    src="Assets/Execution/3.jpg" loading="lazy" alt="Service Second Image"
+                                    src="Assets/Execution lead/3.JPG" loading="lazy" alt="Service Second Image"
                                     class="cover-image services" /></div>
                         </div>
                     </div>
@@ -796,7 +832,7 @@
                         </div>
                         <h2 class="h2"><sub>Rambla&#x27;s Touch</sub></h2>
                     </div>
-                    <a data-w-id="9382defc-7104-f8ce-240f-b908b80f9071" href="insights.html"
+                    <a data-w-id="9382defc-7104-f8ce-240f-b908b80f9071" href="ramblas-touch.html"
                         class="button-black w-inline-block">
                         <p class="button-text text-white no-wrap">Explore all</p>
                         <div class="button-arrow white w-embed"><svg width="18" height="18" viewBox="0 0 18 18"
@@ -811,7 +847,7 @@
                     <div class="top-collection-list-wrapper w-dyn-list">
                         <div role="list" class="top-collection-list w-dyn-items">
                             <div role="listitem" class="top-collection-item w-dyn-item"><a
-                                    href="insights/Bespoke%20Interiors.html"
+                                    href="ramblas-touch/Bespoke%20Interiors.html"
                                     class="blogs-top-layout w-inline-block">
                                     <div data-w-id="f9bace02-e330-d087-0af4-1e2416cc0bc0"
                                         class="blogs-top-content-wrap">
@@ -834,7 +870,7 @@
                     <div class="bottom-collection-list-wrapper w-dyn-list">
                         <div role="list" class="bottom-collection-list w-dyn-items">
                             <div role="listitem" class="bottom-collection-item w-dyn-item"><a
-                                    href="insights/Guided%20viewings.html"
+                                    href="ramblas-touch/Guided%20viewings.html"
                                     class="blogs-bottom-layout w-inline-block">
                                     <div data-w-id="4b59c6b9-2c88-b1bb-32b2-2e17ad99c29f" style="opacity:0"
                                         class="blogs-bottom-content-wrap">
@@ -856,7 +892,7 @@
                                 <link rel="prefetch" href="#/seo-techniques-to-boost-online-visibility" />
                             </div>
                             <div role="listitem" class="bottom-collection-item w-dyn-item"><a
-                                    href="insights/Curated%20Connections.html"
+                                    href="ramblas-touch/Curated%20Connections.html"
                                     class="blogs-bottom-layout w-inline-block">
                                     <div data-w-id="4b59c6b9-2c88-b1bb-32b2-2e17ad99c29f" style="opacity:0"
                                         class="blogs-bottom-content-wrap">
@@ -908,8 +944,7 @@
                 </div>
                 <div data-w-id="928c2780-a577-8574-6700-6a0d8d279a90" class="footer-bottom">
                     <div class="bottom-top">
-                        <div class="spcial-icon-wrap"><a href="https://www.facebook.com/"
-                                class="sub-text text-white">FB</a><a href="https://x.com/"
+                        <div class="spcial-icon-wrap"><a href="https://x.com/"
                                 class="sub-text text-white">youtube</a><a href="https://www.linkedin.com/"
                                 class="sub-text text-white">linkedin</a><a href="https://www.instagram.com/"
                                 class="sub-text text-white">Inta</a></div>
@@ -1025,6 +1060,7 @@
             }).observe(document.body, { childList: true, subtree: true });
         });
     </script>
+    <script src="js/mobile-polished.js"></script>
 </body>
 
 </html>
