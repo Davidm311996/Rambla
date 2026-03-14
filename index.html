@@ -973,6 +973,30 @@
             opacity: 1;
             transform: scale(1);
         }
+
+        /* 1x1 Photo Squares & Crop */
+        .cover-image-wrap.small {
+            aspect-ratio: 1 / 1 !important;
+            width: 80px !important;
+            height: 80px !important;
+            border-radius: 12px !important;
+            overflow: hidden !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+        }
+
+        .cover-image-wrap.small img {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            object-position: center !important;
+        }
+
+        .image-holder.one {
+            gap: 10px !important;
+            display: flex !important;
+        }
     </style>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
