@@ -134,15 +134,28 @@
         margin-bottom: 40px !important;
     }
 
-    /* Restore Hero Slider Visibility on Mobile - Fix Blocking Masks */
+    /* Restore Hero Slider Visibility on Mobile - Definitive Fix */
     .section {
         padding-top: 15px !important;
         padding-bottom: 15px !important;
     }
 
+    /* Force all layers to be visible and transparent */
+    .banner-image-box-wrap,
+    .banner-image-wrap,
+    .starix-slider-wrap,
+    .starix-bottom.one,
     .banner-image-wrap-top,
     .banner-image-wrap-bottom {
-        background-color: transparent !important; /* Force transparent to reveal slider behind */
+        opacity: 1 !important;
+        visibility: visible !important;
+        background-color: transparent !important;
+        background: transparent !important;
+        display: block !important;
+    }
+
+    .starix-bottom.one {
+        display: flex !important; /* Keep flex for the slider items */
     }
 
     .banner-image-wrap-bottom {
@@ -155,16 +168,18 @@
 
     .starix-bottom.one img, 
     .starix-slider-wrap {
-        height: 400px !important; /* Restore height for visibility window */
+        height: 400px !important; /* Consistent height window */
     }
 
     .carve-image, .carve-image-two {
-        max-height: 120px !important; /* Capping curve thickness */
+        max-height: 120px !important; /* Cap curve thickness */
         object-fit: cover !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 
     .carve-image-two {
-        transform: scaleY(1.0) !important; /* Prevent total coverage on mobile */
+        transform: scaleY(1.0) !important; /* Prevent total coverage */
     }
 
     .starix-top, 
