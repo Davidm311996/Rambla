@@ -83,8 +83,13 @@
 }
 
 /* 2.5 Global Fixes for all Breakpoints */
+.creation-layout {
+    position: relative !important;
+}
+
 .image-overlay-box {
     height: 100% !important;
+    bottom: 0 !important;
 }
 
 /* 3. Page-Specific Global Elements */
@@ -204,17 +209,42 @@
         margin-bottom: 20px !important;
     }
 
-    /* Master Delivery Section Fix */
+    /* Master Delivery Section Fix - Format like Absolute Trust */
     .credibility-bottom {
         display: flex !important;
         flex-direction: column !important;
         gap: 20px !important;
+        overflow-x: hidden !important; /* Remove sideways scroll */
+        width: 100% !important;
     }
     .credibility-info-box {
-        display: block !important;
+        display: flex !important;
+        align-items: center !important;
         width: 100% !important;
         background: transparent !important;
         opacity: 1 !important;
         visibility: visible !important;
+        position: relative !important;
+    }
+    .credibility-info-box::before {
+        content: "";
+        display: block;
+        width: 30px;
+        height: 30px;
+        margin-right: 15px;
+        flex-shrink: 0;
+        background-image: url('https://cdn.prod.website-files.com/697a72996780635254f431ca/6995edce4957eeca37b9d211_checkmark-xxl.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .credibility-info-left {
+        width: 100% !important;
+    }
+    .credibility-info-left .h6 {
+        margin: 0 !important;
+    }
+    .credibility-info-right {
+        display: none !important; /* Hide the large image wrap if present */
     }
 }
