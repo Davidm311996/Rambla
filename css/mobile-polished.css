@@ -82,6 +82,11 @@
     }
 }
 
+/* 2.5 Global Fixes for all Breakpoints */
+.image-overlay-box {
+    height: 100% !important;
+}
+
 /* 3. Page-Specific Global Elements */
 @media (max-width: 767px) {
     /* Results Section - Premium Sticky Reveal */
@@ -155,7 +160,19 @@
     }
 
     .starix-bottom.one {
-        display: flex !important; /* Keep flex for the slider items */
+        display: flex !important;
+        flex-direction: row !important;
+        overflow-x: auto !important;
+        -webkit-overflow-scrolling: touch;
+        gap: 15px !important;
+    }
+    
+    .starix-bottom.one img.stratix {
+        opacity: 1 !important;
+        visibility: visible !important;
+        display: block !important;
+        width: auto !important;
+        max-width: 80vw !important;
     }
 
     .banner-image-wrap-bottom {
@@ -185,5 +202,19 @@
     .starix-top, 
     .stratix-button-info-wrap {
         margin-bottom: 20px !important;
+    }
+
+    /* Master Delivery Section Fix */
+    .credibility-bottom {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 20px !important;
+    }
+    .credibility-info-box {
+        display: block !important;
+        width: 100% !important;
+        background: transparent !important;
+        opacity: 1 !important;
+        visibility: visible !important;
     }
 }
