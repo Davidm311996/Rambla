@@ -215,11 +215,8 @@
     }
 
     .banner-image-wrap-bottom {
-        bottom: 0 !important;
-        height: 130px !important;
+        bottom: 1px !important;
         background-color: white !important;
-        display: flex !important;
-        align-items: flex-start !important;
     }
 
     .carve-image,
