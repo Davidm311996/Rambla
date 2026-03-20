@@ -144,64 +144,65 @@
         margin-bottom: 40px !important;
     }
 
-    /* Restore Hero Slider Visibility on Mobile - Definitive Fix */
-    .section {
-        padding-top: 15px !important;
-        padding-bottom: 15px !important;
-    }
-
-    /* Force all layers to be visible and transparent */
-    .banner-image-box-wrap,
-    .banner-image-wrap,
-    .starix-slider-wrap,
-    .starix-bottom.one,
-    .banner-image-wrap-top,
-    .banner-image-wrap-bottom {
+    /* 4. Hero Carousel Visibility Fix (Global for Tablet/Mobile) */
+    .banner-image-box-wrap {
+        display: block !important;
         opacity: 1 !important;
         visibility: visible !important;
-        background-color: transparent !important;
-        background: transparent !important;
+        min-height: 350px !important;
+        height: auto !important;
+        overflow: visible !important;
+        position: relative !important;
+        z-index: 10 !important;
+    }
+
+    .banner-image-wrap {
         display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        height: 100% !important;
+        min-height: 350px !important;
+        overflow: hidden !important;
+        position: relative !important;
+    }
+
+    .starix-slider-wrap {
+        display: block !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        height: 350px !important;
+        max-height: 500px !important;
+        width: 100% !important;
+        overflow: hidden !important;
     }
 
     .starix-bottom.one {
         display: flex !important;
         flex-direction: row !important;
+        opacity: 1 !important;
+        visibility: visible !important;
+        height: 100% !important;
+        width: max-content !important;
+        gap: 15px !important;
         overflow-x: auto !important;
         -webkit-overflow-scrolling: touch;
-        gap: 15px !important;
     }
-    
+
     .starix-bottom.one img.stratix {
-        opacity: 1 !important;
-        visibility: visible !important;
         display: block !important;
-        width: auto !important;
-        max-width: 80vw !important;
-    }
-
-    .banner-image-wrap-bottom {
-        bottom: 0px !important;
-    }
-
-    .section.black {
-        padding-top: 20px !important;
-    }
-
-    .starix-bottom.one img, 
-    .starix-slider-wrap {
-        height: 400px !important; /* Consistent height window */
-    }
-
-    .carve-image, .carve-image-two {
-        max-height: 120px !important; /* Cap curve thickness */
-        object-fit: cover !important;
         opacity: 1 !important;
         visibility: visible !important;
+        height: 350px !important;
+        width: auto !important;
+        max-width: 85vw !important;
+        object-fit: cover !important;
+        flex: 0 0 auto !important;
+        border-radius: 12px !important;
     }
 
-    .carve-image-two {
-        transform: scaleY(1.0) !important; /* Prevent total coverage */
+    .banner-image-wrap-top,
+    .banner-image-wrap-bottom {
+        display: none !important; /* Keep masks hidden on mobile to simplify layout */
     }
 
     .starix-top, 
