@@ -283,15 +283,15 @@ a[x-apple-data-detectors] *,
     .credibility-info-box {
         display: flex !important;
         flex-direction: row !important;
-        align-items: center !important;
+        align-items: center !important; /* Vertically center content */
         width: 100% !important;
         padding: 18px 20px !important;
         background-color: #0b0b0b !important;
         border: 1px solid rgba(255, 255, 255, 0.12) !important;
         border-radius: 12px !important;
-        min-height: 90px !important; /* Standardized height for all 6 cards */
+        min-height: 155px !important; /* Synchronized to match 'Client interest place first' exactly */
         margin-top: 0 !important;
-        margin-bottom: 12px !important; /* Reduced vertical gap */
+        margin-bottom: 8px !important; /* Reduced vertical gap for tighter layout */
         opacity: 1 !important;
         visibility: visible !important;
         position: relative !important;
@@ -321,12 +321,13 @@ a[x-apple-data-detectors] *,
         display: flex !important;
         align-items: center !important;
         text-align: left !important;
+        height: 100% !important;
     }
 
     .purpose-right-info-box .h6, 
     .credibility-info-left .h6 {
         margin: 0 !important;
-        font-size: 15px !important;
+        font-size: 16px !important; /* Slightly increased for readability at new scale */
         line-height: 1.4 !important;
         color: #ffffff !important;
     }
