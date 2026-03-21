@@ -269,48 +269,75 @@ a[x-apple-data-detectors] *,
         margin-bottom: 20px !important;
     }
 
-    /* Master Delivery Section Fix - Format like Absolute Trust */
+    /* 5. About Page - Uniform Card Synchronization (Absolute Trust & Master Delivery) */
+    .purpose-right, 
     .credibility-bottom {
         display: flex !important;
         flex-direction: column !important;
-        gap: 15px !important;
+        gap: 0 !important; /* Gap handled by card margins */
         width: 100% !important;
-        overflow-x: hidden !important;
+        overflow: visible !important;
     }
 
+    .purpose-right-info-wrap, 
     .credibility-info-box {
         display: flex !important;
+        flex-direction: row !important;
         align-items: center !important;
         width: 100% !important;
         padding: 18px 20px !important;
-        background-color: #0b0b0b !important; /* Slightly darker to match section contrast */
-        border: 1px solid rgba(255, 255, 255, 0.15) !important;
-        border-radius: 8px !important;
-        min-height: 60px !important;
+        background-color: #0b0b0b !important;
+        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        border-radius: 12px !important;
+        min-height: 90px !important; /* Standardized height for all 6 cards */
+        margin-top: 0 !important;
+        margin-bottom: 12px !important; /* Reduced vertical gap */
         opacity: 1 !important;
         visibility: visible !important;
         position: relative !important;
-        margin-bottom: 0 !important;
+        box-sizing: border-box !important;
     }
 
+    /* Handle Absolute Trust Icons (Keep Visible) */
+    .purpose-right-info-wrap .purpose-icon,
+    .purpose-right-info-wrap > div:first-child[style*="width: 45px"] {
+        width: 40px !important;
+        margin-right: 15px !important;
+        flex-shrink: 0 !important;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+
+    /* Remove Icons for Master Delivery as requested */
     .credibility-info-box::before {
-        display: none !important; /* Removes the checkmark icons as requested */
+        display: none !important;
     }
 
+    /* Standardize Text for all 6 cards */
+    .purpose-right-info-box, 
     .credibility-info-left {
         width: 100% !important;
         display: flex !important;
         align-items: center !important;
+        text-align: left !important;
     }
 
+    .purpose-right-info-box .h6, 
     .credibility-info-left .h6 {
         margin: 0 !important;
-        text-align: left !important;
         font-size: 15px !important;
         line-height: 1.4 !important;
+        color: #ffffff !important;
+    }
+
+    /* Suppress legacy Webflow spacing and image wrappers */
+    .purpose-right-info-wrap.two, 
+    .purpose-right-info-wrap.three {
+        margin-top: 0 !important;
     }
 
     .credibility-info-right {
-        display: none !important; /* Hide image wrapper if it exists */
+        display: none !important;
     }
 }
