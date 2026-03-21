@@ -88,6 +88,11 @@
     text-decoration: none !important;
 }
 
+/* Remove underlining from clickable blog cards */
+.blog-card-link-wrapper, .blogs-top-layout, .blogs-bottom-layout {
+    text-decoration: none !important;
+}
+
 /* Base styles */
 
 /* 2.5 Global Fixes for all Breakpoints */
