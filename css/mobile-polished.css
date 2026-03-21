@@ -101,6 +101,11 @@ a[x-apple-data-detectors] *,
 }
 
 /* Force white specifically for the contact card if inherited fails */
+.contact-link {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
 .contact-info-box .paragraph.white,
 .contact-info-box .paragraph.white * {
     color: #ffffff !important;
