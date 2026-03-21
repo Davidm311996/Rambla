@@ -83,9 +83,27 @@
 }
 
 /* Global overrides for dark sections */
-.white, .text-white, .white *, a[href^="tel:"], a[href^="mailto:"] {
+.white, .text-white, .white *, .text-white *, a[href^="tel:"], a[href^="mailto:"] {
     color: #ffffff !important;
     text-decoration: none !important;
+}
+
+/* Specific fix for iOS/Safari auto-linking phone numbers in black */
+a[x-apple-data-detectors], 
+a[x-apple-data-detectors] *,
+.white a, .text-white a {
+    color: inherit !important;
+    text-decoration: none !important;
+    font-size: inherit !important;
+    font-family: inherit !important;
+    font-weight: inherit !important;
+    line-height: inherit !important;
+}
+
+/* Force white specifically for the contact card if inherited fails */
+.contact-info-box .paragraph.white,
+.contact-info-box .paragraph.white * {
+    color: #ffffff !important;
 }
 
 /* Remove underlining from clickable blog cards */
