@@ -34,15 +34,21 @@
     <link href="css/mobile-polished.css" rel="stylesheet" type="text/css" />
     <style id="ground-up-cards-sync">
         @media (max-width: 991px) {
-            /* Ground-Up Card Synchronization - Targeting all 6 cards */
-            body .purpose-right, 
+            /* Reset Layout Containers to fix right-side offset and clipping */
+            body .purpose-layout,
+            body .credibility-layout,
+            body .credibility-box,
+            body .purpose-left,
+            body .purpose-right,
             body .credibility-bottom {
-                display: flex !important;
-                flex-direction: column !important;
-                gap: 0 !important;
+                display: block !important;
                 width: 100% !important;
+                margin: 0 !important;
+                padding: 0 !important;
+                float: none !important;
             }
 
+            /* Ground-Up Card Synchronization - Targeting all 6 cards */
             body .purpose-right-info-wrap, 
             body .credibility-info-box {
                 display: flex !important;
