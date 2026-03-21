@@ -273,38 +273,44 @@ a[x-apple-data-detectors] *,
     .credibility-bottom {
         display: flex !important;
         flex-direction: column !important;
-        gap: 20px !important;
-        overflow-x: hidden !important; /* Remove sideways scroll */
+        gap: 15px !important;
         width: 100% !important;
+        overflow-x: hidden !important;
     }
+
     .credibility-info-box {
         display: flex !important;
         align-items: center !important;
         width: 100% !important;
-        background: transparent !important;
+        padding: 18px 20px !important;
+        background-color: #0b0b0b !important; /* Slightly darker to match section contrast */
+        border: 1px solid rgba(255, 255, 255, 0.15) !important;
+        border-radius: 8px !important;
+        min-height: 60px !important;
         opacity: 1 !important;
         visibility: visible !important;
         position: relative !important;
+        margin-bottom: 0 !important;
     }
+
     .credibility-info-box::before {
-        content: "";
-        display: block;
-        width: 30px;
-        height: 30px;
-        margin-right: 15px;
-        flex-shrink: 0;
-        background-image: url('https://cdn.prod.website-files.com/697a72996780635254f431ca/6995edce4957eeca37b9d211_checkmark-xxl.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
+        display: none !important; /* Removes the checkmark icons as requested */
     }
+
     .credibility-info-left {
         width: 100% !important;
+        display: flex !important;
+        align-items: center !important;
     }
+
     .credibility-info-left .h6 {
         margin: 0 !important;
+        text-align: left !important;
+        font-size: 15px !important;
+        line-height: 1.4 !important;
     }
+
     .credibility-info-right {
-        display: none !important; /* Hide the large image wrap if present */
+        display: none !important; /* Hide image wrapper if it exists */
     }
 }
