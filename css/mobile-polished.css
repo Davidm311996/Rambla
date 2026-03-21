@@ -69,6 +69,13 @@
     .hero-heading { font-size: 42px !important; }
     .big-text { font-size: 34px !important; }
     
+    /* Global overrides for dark sections */
+.white, .text-white, .white *, a[href^="tel:"], a[href^="mailto:"] {
+    color: #ffffff !important;
+    text-decoration: none !important;
+}
+
+/* Base styles */
     /* 2. Animation Restoration & Mobile Parity */
     /* Ensure elements hidden for IX2 are visible or restored */
     .zoom-target {
