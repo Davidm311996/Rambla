@@ -1,5 +1,5 @@
 /**
- * Rambla Property Partners - Centralized Mobile Logic
+ * Rambla Properties - Centralized Mobile Logic
  * Handles animation restoration, counter triggers, and smooth transitions on mobile.
  */
 
